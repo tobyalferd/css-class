@@ -1,0 +1,13 @@
+div{width: 200px; height: 200px; background-image:url(../images\ \(2\).jpeg); border: 1px solid black;
+border-radius: 100%;
+}
+p{ 
+border-left-style: dotted;
+border-width: 2px;
+border-color: green;
+}
+body{background-image: url(../images\ \(4\).jpeg); background-repeat: no-repeat;
+background-size: cover;
+background-position: right top;
+background-attachment: fixed    ;}
+fieldset{border: none;}

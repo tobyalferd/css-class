@@ -1,0 +1,11 @@
+    #zalien,h4{color: blue;}
+    .tilubee{color: purple;}
+    h1{color: green;}
+     main{background-color: cyan;}
+    section{background-color: lightblue;}
+   .tilubee:hover{color: red;}
+    input[type="text"]{background-color: #0069ff;}
+    /* *{
+        margin: 0px;
+        padding: 0px    ;
+    } */

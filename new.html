@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Desktop/icofont/icofont.min.css">
+    <title>Document</title>
+    <style>
+  .inp{
+        border:1px solid black;
+        width:fit-content;
+        border-radius:20px;
+        padding:0 20px;
+        margin:auto;
+    }
+    input{
+      width: 500px;
+      height: 40px;
+      border: none;
+      outline: none;
+    }
+    .dropdown{
+        display:none;
+
+    }
+    .inp:focus-within .dropdown{
+        display: block;
+        /* outline: auto; */
+    }
+
+    h1::first-letter{
+        font-size: 50px;
+
+    }
+    h1:nth-child(6) {
+        color:red; 
+
+    }
+    h1:before {
+        content: "/00024";
+        .over{}
+
+    }
+
+    </style>
+  
+</head>
+<body>
+    <main>
+        <div class="inp">
+            <i class="icofont-search-1"></i>
+            <input type="text" placeholder="type a URL">
+            <i class="icofont-mic"></i>
+            <div class="dropdown">
+              <p>
+                <i class="icofont-history"></i>
+                <span>Your recent history</span>
+              </p>
+              <p>
+                <i class="icofont-history"></i>
+                <span>Your recent history</span>
+              </p>
+              <p>
+                <i class="icofont-history"></i>
+                <span>Your recent history</span>
+              </p>
+              <p>
+                <i class="icofont-history"></i>
+                <span>Your recent history</span>
+              </p>
+              <p>
+                <i class="icofont-history"></i>
+                <span>Your recent history</span>
+              </p>
+            </div>
+
+        </div>
+    </main>
+    <h1></h1>
+</body>
+</html>

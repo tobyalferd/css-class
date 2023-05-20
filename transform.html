@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <title>Document</title>
+    <style>
+    .rotate{
+        width: 60px;
+        height: 70px;
+        background-color: blue;
+        transition: 2s;
+
+    }
+
+
+    .rotate:hover{
+        transform: rotateY(360deg);
+        background-color: aqua;
+        border: none;
+    }
+    .me{
+        width: 70px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: grey;
+        transition: 1.3s;
+        margin-top: 40px;
+        border:none;
+    }
+    .me:hover{
+        transform: rotateX(360deg);
+        background-color: blue;
+    }
+    .scale{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    .odd{
+        width: 200px;
+        height: 50px;
+        background-color: blueviolet;
+        box-shadow: 10px 8px blue;
+        transition: 1s;
+        border: none;
+        border-radius: 20px;
+         
+    }
+    .odd:hover{
+        translate:10px 8px;
+        background-color: orange;
+        box-shadow: none;
+        
+        
+    }
+    .heww{
+        width: 300px;
+        height: 300px;
+        /* background-color: red; */
+        border: 1px solid black;
+        margin-left: 300px;
+        margin-top: 200px;
+    }
+    .monay{
+     margin-left: 260px;
+     margin-top: 10px;
+    }
+    .nev{
+        width: 250px;
+        height: 250px;
+        /* margin-top: 5px; */
+        border: 1px solid black;
+        position: absolute;
+        display: none;
+        z-index: -2;
+    }
+    .heww:focus-within .nev{
+        display: block;
+        transition: 2s;
+    }
+    html,body {
+    height: 100%;    
+    overflow: hidden;
+}
+
+#content {
+    position: relative;
+    height: 100%;
+}
+.page {
+    position: absolute;
+    top:0;
+
+    height: 100%;  
+    width: 100%;
+}
+#page1 {
+    background: #d94e4e;
+    left:-100%;
+    -webkit-animation: left-to-right 5s linear forwards;
+    animation: left-to-right 5s linear forwards;
+}
+#page2 {    
+    background: #60b044;    
+    left:0;    
+    -webkit-animation: right-to-left 5s linear forwards;
+    animation: right-to-left 5s linear forwards;
+}
+
+@-webkit-keyframes left-to-right{
+    from{left:-100%}
+    to{left:0}
+}
+@-webkit-keyframes right-to-left{
+    from{left:0}
+    to{left:100%}
+}
+
+@keyframes left-to-right{
+    from{left:-100%}
+    to{left:0}
+}
+@keyframes right-to-left{
+    from{left:0}
+    to{left:100%}
+}
+    </style>
+</head>
+<body>
+    <main>
+        <button class="rotate">Register</button>
+        <div class="scale">
+
+        </div>
+        <button class="odd"> tour the project</button>
+    </main>
+    <button onclick="show()" class="me"> level up</button>
+ <div class="heww">
+        <button class="icofont-navigation-menu monay">
+            <div class="nev">
+       
+            </div>
+        </button>
+    
+    </div> 
+     <div id="content">
+    <div id="page1" class="page">
+        Content Area 1       
+    </div> 
+     <div id="page2" class="page"> 
+         Content Area 1 -->        
+     </div> 
+ </div>
+<div id="content">
+    <div id="page1" style="width: 100px; height: 100px; color: white; background-color:silver; float: left; margin-left: -90px;">
+        Content Area 1
+</div>
+<div id="page2" style="width: 100px; height: 100px; color: white; background-color:silver; float: right; margin-right: -90px;">
+   Content Area 1
+</div>
+</div>
+
+
+</body>
+</html>
+ 
+
+<script> 
+   [[]]
+    $(document).ready(function() {
+$('#page1').animate({
+   marginLeft: "+=90"
+}, 5000);
+$('#page2').animate({
+   marginRight: "+=90"
+}, 5000);
+});
+</script>
